@@ -13,7 +13,8 @@
     <nav th:replace="fragments/fragment :: navbar"></nav>
 
     <div class="container-fluid">
-        <h2 th:text=" 'Hello ' + ${#httpServletRequest.remoteUser} + ' !'">Login as</h2>
+      <h2 th:text=" 'Hello ' + ${#httpServletRequest.remoteUser} + ' !'">Login as</h2>
+      <h4 th:text="${role}" style="text-transform: capitalize;">Role</h4>
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
