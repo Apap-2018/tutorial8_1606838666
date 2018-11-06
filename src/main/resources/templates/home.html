@@ -17,6 +17,34 @@
             <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">
+                        Tambah User Baru
+                    </div>
+                    <div class="card-body">
+                        <form th:action="@{/user/addUser}" method="post">
+                          <div class="row form-group">
+                            <label for="" class="col-sm-4">User Name</label>
+                            <input type="text" class="col-sm-8 form-control input-sm" name="username">
+                          </div>
+                          <div class="row form-group">
+                            <label for="" class="col-sm-4">Password: </label>
+                            <input type="password" class="col-sm-8 form-control input-sm" name="password">
+                          </div>
+                          <div class="row form-group">
+                            <label for="" class="col-sm-4">Role: </label>
+                            <input type="text" class="col-sm-8 form-control input-sm" name="role">
+                          </div>
+                          <div>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
                         Tambah Dealer
                     </div>
                     <div class="card-body">
@@ -25,7 +53,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <br>
         <div class="row">
             <div class="col-md-6">
